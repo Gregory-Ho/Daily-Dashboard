@@ -1,0 +1,60 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body {
+	position: fixed;
+}
+.frame {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+}
+.blurFrame {
+	opacity: 0.7;
+	background-color: black;
+	font-family: Quicksand, Calibri, Sans-Serif;
+	width: 301px;
+	height: 301px;
+	z-index: 105;
+}
+#image {
+	position: fixed;
+	background-image: url("pic.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 100%;
+}
+.datetime {
+	position: fixed;
+	text-align: center;
+	position: fixed;
+	top: 45%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+}
+#clock {
+	color: white;
+	font-size: 80px;
+}
+#date {
+	color: yellow;
+	font-size: 20px;
+}
+.progress {
+	position: fixed;
+	border-style: solid;
+}
+#frame1 { /* Bottom */
+	border-width: 2px;
+}
+#frame2 { /* Top */
+	border-width: 2px;
+}
