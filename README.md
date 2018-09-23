@@ -8,3 +8,4 @@ Stil work in progress:
 - Bug Fixing
 - Flow of JS
 - Styling
+- Change wallpaper daily
