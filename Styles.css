@@ -1,9 +1,7 @@
 *{
 	margin: 0;
 	padding: 0;
-}
-body {
-	position: fixed;
+	font-family: Quicksand, Calibri, Sans-Serif;
 }
 .frame {
 	position: fixed;
@@ -13,14 +11,13 @@ body {
 	width: 300px;
 	height: 300px;
 	border-radius: 50%;
+	z-index: 99;
 }
 .blurFrame {
-	opacity: 0.7;
-	background-color: black;
 	font-family: Quicksand, Calibri, Sans-Serif;
 	width: 301px;
 	height: 301px;
-	z-index: 105;
+	z-index: 100;
 }
 #image {
 	position: fixed;
@@ -30,6 +27,7 @@ body {
 	background-repeat: no-repeat;
 	height: 100%;
 	width: 100%;
+	z-index: 0;
 }
 .datetime {
 	position: fixed;
@@ -57,4 +55,108 @@ body {
 }
 #frame2 { /* Top */
 	border-width: 2px;
+}
+.feed {
+	position: fixed;
+	height: 50%;
+	width: 35%;
+	z-index: 100;
+	top: 50%;
+	border-radius: 3%;
+}
+.feed:hover {
+	display: block;
+}
+.news {
+	left: 20%;
+	transform: translate(-50%, -50%);	
+}
+.weather {
+	left: 80%;
+	transform: translate(-50%, -50%);
+}
+.whiteBlur {
+	opacity: 0.8;
+	background-color: white;
+	z-index: 99;
+}
+.blackBlur {
+	opacity: 0.7;
+	background-color: black;
+	z-index: 99;
+}
+.newsItem {
+	font: 0.7em Quicksand,sans-serif;
+	border-bottom: solid 1px black;
+	list-style: none;
+	width: 95%;
+	height: 30%;
+	padding-top: 2%;
+	margin: auto auto;
+	color: black;
+}
+.newsItem:hover {
+	color: #595959;
+}
+.headline {
+	position: static;
+	height: 100%;
+	width: 70%;
+	display: inline;
+	color: inherit;
+}
+.articleDesc {
+	color: inherit;
+	font: 1.1em Quicksand, sans-serif;
+	display: block;
+}
+.articleInfo {
+	color: inherit;
+	font-family: Quicksand, sans-serif;
+	font-size: 90%;
+	padding-top: 1%;
+	display: inherit;
+}
+#lastNewsItem {
+	border: none;
+}
+.closeButton {
+	background: none;
+	border: none;
+	font: 1em Quicksand, sans-serif;
+	width: 2em;
+	height: 2em;
+	z-index: 101;
+	float: right;
+	border-radius: 50%;
+}
+.closeButton:hover {
+	background: #bfbfbf;
+}
+.leftCol{
+	float: left;
+}
+.rightCol {
+	float: left;
+	padding-left: 10px;
+}
+.hourlyForecast, .dailyForecast {
+	width: 100%;
+}
+td {
+	text-align: center;
+	vertical-align: center;
+}
+.hourlyDesc, .dailyDesc {
+	font-size: 0.8em;
+}
+.precip{
+	color: #0000ff;
+}
+.dailyLow {
+	color: #404040;
+	font-size: 0.8em;
+}
+ul {
+	list-style-type: none;
 }

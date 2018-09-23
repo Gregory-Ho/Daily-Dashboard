@@ -1,7 +1,7 @@
  <!DOCTYPE html>
  <html>
  <head>
-	<title>My Dashboard</title>
+	<title>Daily Dash - How's The Day?</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -12,6 +12,7 @@
  <head>
  <body>
 	<div id="image"></div>
+	<div class="blurFrame frame blackBlur"></div>
 	<div class="blurFrame frame">
 		<p class="datetime">
 			<span id="clock"></span>
@@ -21,6 +22,151 @@
 	</div>
 	<div id="frame1" class="frame progress"></div>
 	<div id="frame2" class="frame progress"></div>
+	<div id="newsBlur" class="news feed whiteBlur"></div>
+	<ul id="newsFeed" class="feed news">
+		<li id="ns1" class="newsItem" data-href="">
+			<button type="button" class="closeButton">&#10006;</button>
+			<h2 class="headline"></h2>
+			<p class="articleDesc"></p>
+			<span class="articleInfo"></span>
+		</li>
+		<li class="newsItem" data-href="">
+			<button type="button" class="closeButton">&#10006;</button>
+			<h2 class="headline"></h2>
+			<p class="articleDesc"></p>
+			<span class="articleInfo"></span>
+		</li>
+		<li id="lastNewsItem" class="newsItem" data-href="">
+			<button type="button" class="closeButton">&#10006;</button>
+			<h2 class="headline"></h2>
+			<p class="articleDesc"></p>
+			<span class="articleInfo"></span>
+		</li>
+	</ul>
+	<div id="weatherBlur" class="weather feed whiteBlur"></div>
+	<div id="weatherFeed" class="weather feed">
+		<h2 class="location"></h2>
+		<h1 class="quickDesc"><span class="temperature"></span></h1>
+		<ul class="currentWeather leftCol">
+			<li class="feelsLike"/>
+			<li class="wind"/>
+			<li class="sunrise"/>
+		</ul>
+		<ul class="currentWeather rightCol">
+			<li class="precipitation"/>
+			<li class="humidity"/>
+			<li class="sunset"/>
+		</ul>
+		<table class="hourlyForecast">
+			<tr class="hour">
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+			</tr>
+			<tr class="hourlyDesc">
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class="hourlyTemp">
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class="hourlyPrecipitation precip">
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+		<table class="dailyForecast">
+			<tr class="day">
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+			</tr>
+			<tr class="dailyDesc">
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class="dailyHigh">
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class="dailyLow">
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class="dailyPrecipitation precip">
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
 	</div>
  </body>
  </html>
