@@ -72,7 +72,7 @@
 		$.getJSON("http://ip-api.com/json", null, function(data1){
 			geolocationData = data1;
 			//console.log(geolocationData);
-			$.getJSON("https://cors.io/?https://api.darksky.net/forecast/" + DarkSkyKey + "/" + geolocationData.lat + "," + geolocationData.lon + "?&units=ca&exclude=minutely,flags",null, function (data2){
+			$.getJSON("https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/" + DarkSkyKey + "/" + geolocationData.lat + "," + geolocationData.lon + "?&units=ca&exclude=minutely,flags",null, function (data2){
 				weatherData = data2;
 				//console.log(weatherData);
 				loadWeather();
